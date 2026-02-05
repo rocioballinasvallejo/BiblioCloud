@@ -7,16 +7,12 @@ import androidx.lifecycle.ViewModel
 
 class LoginViewModel : ViewModel() {
 
-    // El estado actual de la pantalla (lo que el usuario ve)
     var state by mutableStateOf(LoginState())
         private set
 
-    // Función para cuando el usuario escribe el email
     fun onEmailChanged(nuevoEmail: String) {
         state = state.copy(email = nuevoEmail)
     }
-
-    // Función para cuando el usuario escribe la contraseña
     fun onPasswordChanged(nuevaClave: String) {
         state = state.copy(password = nuevaClave)
     }
@@ -27,7 +23,7 @@ class LoginViewModel : ViewModel() {
             state = state.copy(errorMessage = "¡Oye! No dejes campos vacíos")
         } else {
             state = state.copy(isLoading = true, errorMessage = null)
-            // Aquí es donde en el futuro llamaremos a la API
+            // Pa que llames la api bro
             println("Intentando entrar con: ${state.email}")
         }
     }

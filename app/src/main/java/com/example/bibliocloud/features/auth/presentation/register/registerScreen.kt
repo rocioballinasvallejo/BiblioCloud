@@ -50,7 +50,6 @@ fun RegisterScreen(viewModel: RegisterViewModel, alVolverAlLogin: () -> Unit) {
             Text("Registrarse", fontSize = 26.sp, fontWeight = FontWeight.Bold)
             Spacer(modifier = Modifier.height(20.dp))
 
-            // CAMPOS CORREGIDOS (Líneas 58-60 de tu captura)
             RegistroField("Nombre", state.nombre) { viewModel.onNombreChanged(it) }
             RegistroField("Número telefónico", state.telefono) { viewModel.onTelefonoChanged(it) }
             RegistroField("Contraseña", state.clave, true) { viewModel.onClaveChanged(it) }
@@ -67,7 +66,6 @@ fun RegisterScreen(viewModel: RegisterViewModel, alVolverAlLogin: () -> Unit) {
     }
 }
 
-// ESTA ES LA FUNCIÓN QUE TE FALTABA Y CAUSABA EL ERROR ROJO
 @Composable
 fun RegistroField(label: String, value: String, esPass: Boolean = false, onValue: (String) -> Unit) {
     Column(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
