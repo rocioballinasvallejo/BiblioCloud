@@ -1,7 +1,8 @@
-esta aplicacion es un gestor de libros el cual contendra una bd para que el publico que utilice esta app movil pueda saber que libros tenemos disponibles en fisicos y asi poder adquirir el libro (rentado) disponible, si el libro no esta disponible entonces al momento de adquirirlo te marcara "libro no disponible" como al momento de rentarlo se desabilitara la opcion de "rentar" con el proposito de poder 
+Esta aplicación es un gestor de libros el cual contendrá una BD para que el público que utilice esta app móvil pueda saber qué libros tenemos disponibles en físico y así poder adquirir el libro (rentado) disponible. Si el libro no está disponible, entonces al momento de adquirirlo te marcará "libro no disponible", y al momento de rentarlo se deshabilitará la opción de "rentar" con el propósito de poder llevar un control.
 
-ESTRUCTURA DE PROYECTO
+### ESTRUCTURA DE PROYECTO
 
+```text
 app/src/main/java/com/example/bibliocloud/
 ├── core/                        # Configuración global y utilidades
 │   ├── di/                      # Inyección de dependencias
@@ -14,7 +15,7 @@ app/src/main/java/com/example/bibliocloud/
 │       │   ├── remote/          # DTOs (Data Transfer Objects) de la API
 │       │   └── repository/      # Implementación del Repositorio
 │       │
-│       ├── domain/              # Lógica de negocio (Independiente de la UI)
+│       ├── domain/              # Lógica de negocio
 │       │   ├── model/           # Modelos de dominio
 │       │   ├── repository/      # Interfaces del Repositorio
 │       │   └── usecase/         # Casos de uso específicos
