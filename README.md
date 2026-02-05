@@ -1,0 +1,1 @@
+esta aplicacion es una gestor de libros la cual contendra una bd para que el publico que utilice esta app movil pueda saber que libros tenemos disponibles en fisicos y asi poder adquirir el libro (rentado) disponible, si el libro no tenemos disponible entonces al momento de adquirirlo te marcara libro no disponible como al momento de rentarlo se desabilitara la opcion de "rentar"
